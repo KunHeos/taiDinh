@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+header a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header button{
+    font-size: 16px;
+}
+
+header{
+    position: relative;
+    padding: 12px 1%;
+    background-color: rgb(41, 28, 28);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+header form{
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    width: 30%;
+    height: 30px;
+    z-index: 3;
+}
+header input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+}
+header button{
+    height: 100%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+header .log button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}
+header .log button:hover{background-color: rgb(215, 235, 39);}
+
+header a i:hover{color: rgb(215, 235, 39);}
+
+.menu span:hover{
+    color: rgb(215, 235, 39);
+}
+
+
+#menu-repon{
+    width: 42px;
+    text-align: center;
+    position: relative;
+}
+.menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.menu-content{
+    display: grid;
+
+}
+.menu.open{
+    display: block;
+}
+.menu-content a{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 0;
+    width: 100px;
+    color: white;
+}
+#menu-repon:hover button i{color: yellowgreen;}
+#menu-repon:hover .menu-content a{display: block;}
+.menu-content a:hover{color: yellowgreen;}
+
+.dropdown
+{
+    display: none;
+    width: max-content;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.dropdown.open{
+    display: block;
+}
+.dropdown .dropdown-content{
+    list-style-type: none;
+}
+.dropdown .dropdown-content li{
+    margin: 0 20px;
+    padding: 12px 0;
+}
+.dropdown .dropdown-content li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.dropdown .dropdown-content a:hover{color: yellowgreen;}
+
+
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: url(https://cdna.artstation.com/p/assets/images/images/032/623/076/large/saigon-dragon-studios-library-sketches-color2.jpg?1606981300);
+    background-position: center;
+    background-size: cover;
+}
+
+.shape-black{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(41, 28, 28);
+    
+}
+.shape-black.nav{
+    margin-bottom: 50px;
+}
+
+section{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 800px;
+    background: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-sky-white-clouds-beautiful-book-background-picture-image_979833.jpg) no-repeat;
+    background-size: cover;
+}
+#product{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 10px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-sky-white-clouds-beautiful-book-background-picture-image_979833.jpg) no-repeat;
+    width: 40%;
+}
+.left img{
+    width: 280px;
+    margin: 5px;
+}
+.right{
+    background-color: burlywood;
+    width: 70%;
+}
+
+.right .text{
+    padding: 30px 90px 30px 30px;
+}
+.right .text h2{
+    margin-bottom: 30px;
+}
+.right .count{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+.right .count div{
+    background-color: white;
+    border: 1px solid black;
+    width: max-content;
+    margin-left: 25%;
+}
+.right .count .number{
+    margin: 0 12px
+}
+.right .count button{
+    width: 40px;
+    border: none;
+    outline: none;
+}
+.right .disc{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 50px;
+}
+.right .disc button{
+    border: none;
+    outline: none;
+    width: 100px;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+}
+.right .disc button:hover{
+    height: 30px;
+}
+.right .des{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right .des button{
+    height: 50px;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+.right .des .cart{
+    background-color: rgb(10, 107, 94);
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.right .des .buy{
+    background-color: rgb(107, 48, 8);
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.right .des .cart:hover{
+    background-color: rgb(17, 104, 138);
+}
+.right .des .buy:hover{
+    background-color: brown;
+}
+.price2{
+    display: none;
+}
+footer{
+    margin-top: 100px;
+    position: sticky;
+    top: 100%;
+    background-color: rgb(41, 28, 28);
+    height: 100px;
+    width: 100%;
+   
+}
+.logo{
+    padding: 2px 0;
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1250px)
+{
+    .logo-phone{display: block;}
+    #logo span{
+        font-size: 20px;
+    }
+    #logo i{
+        font-size: 20px;
+    }
+    .shape-black{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        padding: 10px 0;
+    }
+    header form{
+        width: 50%;
+    }
+
+    #logo{
+        display: none;
+    }
+    .menu-product{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .menu-content a{
+        padding: 10px;
+    }
+ 
+    nav{
+        width: 100%;
+        height: 250px;
+    }
+    section{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .dropdown{
+        height: 250px;
+    }
+
+    .dropdown .dropdown-content li{
+        font-size: 14px;
+        margin: 0 12px;
+        padding: 4px 0;
+    }
+    .menu{
+        height: 250px;
+    }
+    .menu-content a{
+        font-size: 14px;
+        padding: 6.5px 0;
+    }
+    #product{
+        width: 85%;
+        height: 400px;
+    }
+    .right .text{
+        font-size: 13px;
+        padding: 20px 70px 30px 20px;
+    }
+    .right .text h2{
+        margin-bottom: 15px;
+    }
+    .right .disc{
+        margin: 15px 0;
+    }
+    .left img{
+        width: 70%;
+    }
+    .right .des button{
+        width: 150px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    section{
+        margin-top: 25px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    header form{
+        height: 20px;
+    }
+    .menu span{
+        font-size: 14px;
+    }
+    #product{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        margin-top: 80px;
+        height: 300px;
+    }
+    .right,
+    .left{
+        font-size: 12px;
+    }
+    .shape-black.nav {
+        margin-bottom: 25px;
+    }
+
+    .left img{
+        width: 110px;
+    }
+    .right .text{
+        font-size: 11px;
+        padding: 20px 20px 30px 20px;
+    }
+    .right .des button{
+        width: 120px;
+    }
+    .price h2,
+    .price{
+        display: none;
+    }
+
+    .left{
+       display: unset;
+       text-align: center;
+    }
+    .left img{
+        margin-top: 20px;
+    }
+    .price2{
+        display: block;
+    }
+    footer{
+        margin-top: 25px;
+    }
+}
+

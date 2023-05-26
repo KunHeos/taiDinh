@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Đăng Nhập</title>
+</head>
+
+<body>
+
+    <header>
+        <a id="logo" href="index.html">
+            <h2 style="color: white;">
+                <i class="fa-solid fa-ghost"></i> 
+                <span>BookWorld</span>
+            </h2>
+        </a>
+
+        
+        <div id="menu-repon" >
+            <button style="color: white;"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <div class="menu-content">
+                <a href="introduce.html">Giới Thiệu</a>
+                <a href="Login.html">Đăng Nhập</a>
+                <a href="Register.html">Đăng Ký</a>
+                <a href="">Trợ Giúp</a>
+                <a href="">Thông Báo</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="Box">
+        <div class="Form login">
+            <form action="#">
+                <h2>ĐĂNG NHẬP</h2>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required >
+                    <label>Tên đăng nhập</label>
+                </div>
+               
+                <div class="input-box">
+                    <span class="icon pass" onclick="togglePasswordVisibility()"><i id="eye-icon" class="fa-solid fa-eye"></i></span>
+                    <input id="password-input" class="password" type="password" required>
+                    <label for="password-input">Mật khẩu</label>
+                </div>
+
+                <div class="remember">
+                    <label ><input type="checkbox">Lưu đăng nhập </label>
+                 </div>
+        
+                 <button type="submit" class="Submit log">Đăng Nhập Ngay</button>
+        
+                 <div class="forget-register">
+                    <div class="forget">
+                        <a href="#">Quên tài khoản/mật khẩu</a>
+                     </div>
+            
+                     <div class="register">
+                        <a class="register-link" href="Register.html"> Tạo tài khoản mới</a>
+                     </div>
+                 </div>
+             
+
+                 <div class="Social">
+                    <a class="Submit Face" href="https://www.facebook.com/">
+                      
+                        <p><i class="fa-brands fa-facebook"></i>&ensp;Đăng nhập bằng Facebook</p>
+                        
+                    </a>
+                 </div>
+                 <div class="Social">
+                    <a type="submit" class="Submit GG" href="https://www.google.com/">
+                        <p> <i class="fa-brands fa-google"></i>&ensp;Đăng nhập bằng Google</p>
+                    </a>
+                 </div>
+            </form>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+header a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header button{
+    font-size: 16px;
+}
+
+header{
+    position: relative;
+    padding: 12px 1%;
+    background-color: rgb(41, 28, 28);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+header form{
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    width: 30%;
+    height: 30px;
+    z-index: 3;
+}
+header input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+}
+header button{
+    height: 100%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+header .log button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}
+header .log button:hover{background-color: rgb(215, 235, 39);}
+
+header a i:hover{color: rgb(215, 235, 39);}
+
+.menu span:hover{
+    color: rgb(215, 235, 39);
+}
+
+
+#menu-repon{
+    width: 42px;
+    text-align: center;
+    position: relative;
+}
+.menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.menu-content{
+    display: grid;
+
+}
+.menu.open{
+    display: block;
+}
+.menu-content a{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 0;
+    width: 100px;
+    color: white;
+}
+#menu-repon:hover button i{color: yellowgreen;}
+#menu-repon:hover .menu-content a{display: block;}
+.menu-content a:hover{color: yellowgreen;}
+
+.dropdown
+{
+    display: none;
+    width: max-content;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.dropdown.open{
+    display: block;
+}
+.dropdown .dropdown-content{
+    list-style-type: none;
+}
+.dropdown .dropdown-content li{
+    margin: 0 20px;
+    padding: 12px 0;
+}
+.dropdown .dropdown-content li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.dropdown .dropdown-content a:hover{color: yellowgreen;}
+
+
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: url(https://cdna.artstation.com/p/assets/images/images/032/623/076/large/saigon-dragon-studios-library-sketches-color2.jpg?1606981300);
+    background-position: center;
+    background-size: cover;
+}
+
+.shape-black{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(41, 28, 28);
+    
+}
+.shape-black.nav{
+    margin-bottom: 50px;
+}
+
+section{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 800px;
+    background: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-sky-white-clouds-beautiful-book-background-picture-image_979833.jpg) no-repeat;
+    background-size: cover;
+}
+#introduce{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+}
+.left{
+    background: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-sky-white-clouds-beautiful-book-background-picture-image_979833.jpg);
+    width: 80%;
+}
+.left h2{
+    padding: 45px 0 0 30px;
+    font-weight: bold;
+}
+.left p{
+    padding: 5px 30px;
+}
+.card{
+    width: 18rem;
+}
+footer{
+    margin-top: 100px;
+    position: sticky;
+    top: 100%;
+    background-color: rgb(41, 28, 28);
+    height: 100px;
+    width: 100%;
+   
+}
+.logo{
+    padding: 2px 0;
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1250px)
+{
+    .logo-phone{display: block;}
+    #logo span{
+        font-size: 20px;
+    }
+    #logo i{
+        font-size: 20px;
+    }
+    .shape-black{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        padding: 10px 0;
+    }
+    header form{
+        width: 50%;
+    }
+
+    #logo{
+        display: none;
+    }
+    .menu-product{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .menu-content a{
+        padding: 10px;
+    }
+ 
+    nav{
+        width: 100%;
+        height: 250px;
+    }
+    section{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .dropdown{
+        height: 250px;
+    }
+
+    .dropdown .dropdown-content li{
+        font-size: 14px;
+        margin: 0 12px;
+        padding: 4px 0;
+    }
+    .menu{
+        height: 250px;
+    }
+    .menu-content a{
+        font-size: 14px;
+        padding: 6.5px 0;
+    }
+    #introduce{
+        width: 95%;
+    }
+    .left{
+        font-size: 14px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    section{
+        margin-top: 25px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    header form{
+        height: 20px;
+    }
+    .menu span{
+        font-size: 14px;
+    }
+    #introduce{
+        width: 100%;
+    }
+    section{
+        margin-top: 25px;
+        height: 500px;
+    }
+    .left h2{
+        padding: 5px;
+        font-size: 18px;
+    }
+    .left p{
+        padding: 5px;
+    }
+    .left{
+        font-size: 12px;
+    }
+    .card{
+        font-size: 12px;
+    }
+    .shape-black.nav {
+        margin-bottom: 25px;
+    }
+    footer{
+        margin-top: 25px;
+    }
+    .card{
+        width: 12rem;
+    }
+}
+

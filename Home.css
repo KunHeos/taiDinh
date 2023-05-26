@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+header a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header button{
+    font-size: 16px;
+}
+
+header{
+    position: relative;
+    padding: 12px 1%;
+    background-color: rgb(41, 28, 28);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+header form{
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    width: 30%;
+    height: 30px;
+    z-index: 3;
+}
+header input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+}
+header button{
+    height: 100%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+header .log button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}
+header .log button:hover{background-color: rgb(215, 235, 39);}
+
+header a i:hover{color: rgb(215, 235, 39);}
+
+.menu span:hover{
+    color: rgb(215, 235, 39);
+}
+
+
+#menu-repon{
+    width: 42px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.menu-content{
+    display: grid;
+
+}
+.menu.open{
+    display: block;
+}
+.menu-content a{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 0;
+    width: 100px;
+    color: white;
+}
+#menu-repon:hover button i{color: yellowgreen;}
+#menu-repon:hover .menu-content a{display: block;}
+.menu-content a:hover{color: yellowgreen;}
+
+.dropdown
+{
+    display: none;
+    width: max-content;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.dropdown.open{
+    display: block;
+}
+.dropdown .dropdown-content{
+    list-style-type: none;
+}
+.dropdown .dropdown-content li{
+    margin: 0 20px;
+    padding: 12px 0;
+}
+.dropdown .dropdown-content li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.dropdown .dropdown-content a:hover{color: yellowgreen;}
+
+
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: url(https://cdna.artstation.com/p/assets/images/images/032/623/076/large/saigon-dragon-studios-library-sketches-color2.jpg?1606981300);
+    background-position: center;
+    background-size: cover;
+}
+
+.shape-black{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(41, 28, 28);
+    
+}
+.shape-black.nav{
+    margin-bottom: 50px;
+}
+
+#carouselExampleCaptions{
+    width: 80%;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-item {
+    background-color: aquamarine;
+    height: 400px;
+}
+.carousel-item.no1 {
+    background: url(https://images8.alphacoders.com/774/774677.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}   
+.carousel-item.no2 {
+    background: url(https://a-static.besthdwallpaper.com/student-girl-apartment-wallpaper-3200x1200-96146_90.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item.no3 {
+    background: url(https://cdn.wallpapersafari.com/44/22/zTGvnY.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item.no4 {
+    background: url(https://cutewallpaper.org/23/alice-conisbee-desktop-wallpaper/2929029927.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section{
+    margin-top: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2200px;
+    background-color: transparent;
+}
+
+.content-sec{
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+
+}
+.content-sec.no1{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.content-sec.no1 div{
+    border-radius: 30px;
+}
+.content-sec .left{
+    text-align: center;
+    background-color: rgb(219, 143, 143);
+    width: 30%;
+    height: 100%;
+}
+.content-sec .left img{
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.content-sec .left .text p{
+    color: rgb(48, 47, 11);
+}
+.content-sec .left button{
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid black;
+}
+.content-sec .left button:hover{
+    background-color: brown;
+    color: white;
+}
+
+.content-sec .mid{
+    text-align: center;
+    background-color: rgb(110, 147, 248);
+    width: 30%;
+    height: 100%;
+}
+.content-sec .mid img{
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.content-sec .mid button{
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid black;
+}
+.content-sec .mid button:hover{
+    background-color: rgb(9, 79, 231);
+    color: white;
+}
+.content-sec .right{
+    text-align: center;
+    background-color: rgb(248, 217, 80);
+    width: 30%;
+    height: 100%;
+}
+.content-sec .right img{
+    background-color: rgb(250, 246, 162);
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 2px 15px;
+}
+
+.content-sec .right button{
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid black;
+}
+.content-sec .right button:hover{
+    background-color: rgb(206, 152, 5);
+    color: white;
+}
+.content-sec.no4,
+.content-sec.no3,
+.content-sec.no2{
+    border-bottom: 5px solid black;
+    border-top: 10px solid black;
+    background-color: rgb(255, 208, 208);
+    margin-top: 50px;
+}
+.img-pro{
+    width: 100px;
+    height: 250px;
+}
+.sell{
+    color: black;
+    width: 150px; 
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3px;
+    margin-bottom: 0;
+}
+.book{
+    display: grid;
+    border: 2px solid black;
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.price{
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+}
+.content-sec.no3 .list,
+.content-sec.no2 .list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.content-sec.no3 .list .book img,
+.content-sec.no2 .list .book img{
+    width: 150px;
+    height: 97%;
+}
+
+.content-sec.no4{
+    display: flex;
+}
+
+.content-sec.no4 div{
+    width: 60%;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+footer{
+    margin-top: 100px;
+    position: sticky;
+    top: 100%;
+    background-color: rgb(41, 28, 28);
+    height: 100px;
+    width: 100%;
+   
+}
+.logo{
+    padding: 2px 0;
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1250px)
+{
+    .logo-phone{display: block;}
+    #logo span{
+        font-size: 20px;
+    }
+    #logo i{
+        font-size: 20px;
+    }
+    .shape-black{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        padding: 10px 0;
+    }
+    header form{
+        width: 50%;
+    }
+
+    #logo{
+        display: none;
+    }
+    .menu-product{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .menu-content a{
+        padding: 10px;
+    }
+ 
+    nav{
+        width: 100%;
+        height: 250px;
+    }
+    section{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .dropdown{
+        height: 250px;
+    }
+
+    .dropdown .dropdown-content li{
+        font-size: 14px;
+        margin: 0 12px;
+        padding: 4px 0;
+    }
+    .menu{
+        height: 250px;
+    }
+    .menu-content a{
+        font-size: 14px;
+        padding: 6.5px 0;
+    }
+    #carouselExampleCaptions{
+        width: 90%;
+    }
+    .content-sec.no1 div{
+        margin: 0;
+        border-radius: 0;
+        height: 85%;
+    }
+}
+@media screen and (max-width: 650px)
+{
+    #carouselExampleCaptions{
+        display: none;
+    }
+    header form{
+        height: 20px;
+    }
+    .menu span{
+        font-size: 14px;
+    }
+    .content-sec .text{
+        font-size: 12px;
+    }
+    .content-sec.no3,
+    .content-sec.no2{
+        height: 370px;
+    }
+    .content-sec.no1{
+        height: 300px;
+    }
+    .content-sec .mid img,
+    .content-sec .right img,
+    .content-sec .left img{
+        width: 80px;
+        height: 80px;
+    }
+    .content-sec .right button,
+    .content-sec .mid button,
+    .content-sec .left button{
+        width: 100px;
+    }
+
+    section{
+        height: 1150px;
+    }
+    .content-sec.no4{
+        display: none;
+    }
+    .content-sec.no3 .list .book img,
+    .content-sec.no2 .list .book img{
+         width: 100px;
+         height: 160px;
+    }
+
+    .book{
+        font-size: 12px;
+        width: 104px;
+        height: 250px;
+    }
+    .img-pro{
+        width: 150px;
+        height: 170px;
+    }
+    .price,
+    .sell{
+        width: 100px;
+    }
+    .content-sec.no3 .list,
+    .content-sec.no2 .list{
+        justify-content: space-between;
+        margin: 0 3%;
+    }
+    .content-sec .book p{
+        width: 100px;
+    }
+    .content-sec.no3,
+    .content-sec.no2{
+        margin-top: 40px;
+        border-radius: 0;
+    }
+}
+

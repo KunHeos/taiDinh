@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Đăng Ký</title>
+</head>
+<body>
+    <header>
+
+        <a id="logo" href="index.html">
+            <h2 style="color: white;">
+                <i class="fa-solid fa-ghost"></i> 
+                <span>BookWorld</span>
+            </h2>
+        </a>
+
+        <div id="menu-repon" >
+            <button style="color: white;"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>    
+    </header>
+
+    <nav>
+        <div class="menu">
+            <div class="menu-content">
+                <a href="introduce.html">Giới Thiệu</a>
+                <a href="Login.html">Đăng Nhập</a>
+                <a href="Register.html">Đăng Ký</a>
+                <a href="">Trợ Giúp</a>
+                <a href="">Thông Báo</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="Box">
+        <div class="Form register">
+            <form action="#">
+                <h2>ĐĂNG KÝ</h2>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" required >
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required >
+                    <label>Tên đăng nhập</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon pass" onclick="togglePasswordVisibility()"><i id="eye-icon" class="fa-solid fa-eye"></i></span>
+                    <input id="password-input" class="password" type="password" required>
+                    <label for="password-input">Mật khẩu</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon pass" onclick="togglePasswordVisibility2()"><i id="eye-icon2" class="fa-solid fa-eye"></i></span>
+                    <input id="password-input2" class="password" type="password" required>
+                    <label for="password-input2">Mật khẩu</label>
+                </div>
+                <div class="rule">
+                    <label ><input type="checkbox">Tôi đồng ý với <a href="#">Điều Khoản Dịch Vụ</a>  và <a href="#">Chính Sách Bảo Mật</a></label>
+                 </div>
+        
+                 <button type="submit" class="Submit log">Đăng Ký Ngay</button>
+        
+                 <div class="register">
+                    <p>Tôi đã có tài khoản /  <a class="login-link" href="Login.html">Đăng Nhập</a></p>
+                 </div>
+            </form>
+</div>
+
+    <script src="Login.js"></script>
+</body>
+</html>

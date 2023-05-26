@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+body{
+    background: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+#logo i{
+    font-size: 28px
+}
+header a{
+    font-size: 18px;
+    font-weight: bold;
+}
+header button{
+    font-size: 16px;
+}
+
+header{
+    padding: 12px 16%;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+header form{
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    width: 30%;
+    height: 30px;
+}
+header input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+}
+header button{
+    height: 100%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+header .log button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+}
+header .log button:hover{background-color: rgb(215, 235, 39);}
+
+header a i:hover{color: rgb(215, 235, 39);}
+
+.menu span:hover{
+    color: rgb(215, 235, 39);
+}
+#menu-repon{
+    width: 42px;
+    text-align: center;
+    position: relative;
+}
+nav{
+    position: absolute;
+    top:0;
+    left: 28%;
+    width: 50%;
+}
+.menu{
+    display: none;
+    width: 100%;
+    height: max-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.menu-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu.open{
+    display: block;
+}
+.menu-content a{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 0;
+    width: 100px;
+    color: white;
+}
+#menu-repon:hover button i{color: yellowgreen;}
+#menu-repon:hover .menu-content a{display: block;}
+.menu-content a:hover{color: yellowgreen;}
+
+
+
+.Box{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 70%;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.Box form{
+    width: 70%;
+}
+
+.Box .Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.Form h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.Form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 20px;
+}
+
+.Form .remember{
+    font-size: 18px;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.remember label input{
+    accent-color: white;
+    margin: 5px;
+}
+
+.Form .Submit{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+ 
+}
+
+button.Submit{
+    color: white;
+    background: rgb(183, 216, 134);
+}
+
+.Form .forget{
+    text-align: center;
+    margin-top: 30px;
+}
+.forget a{
+    color:white;
+    text-decoration: none;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+
+.Form .register{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.register a{
+    color:white;
+    text-decoration: none;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+
+.Social {
+   cursor: pointer;
+}
+
+.Social a{
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.Face{
+    color: white;
+    background-color: #4267b2;
+    text-decoration: none;
+}
+
+a.GG{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.rule {
+     margin: -15px 0 15px;
+     display: flex;
+     justify-content: center;
+}
+.rule a{
+    color: aqua;
+}
+.rule label input{
+    accent-color: white;
+    margin: 5px;
+}
+
+.forget-register{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 10px;
+}
+#eye-icon2,
+#eye-icon{
+    cursor: pointer;
+}
+.password-show {
+    -webkit-text-security: none; 
+}
+
+.password-hide {
+    -webkit-text-security: disc; 
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1000px)
+{
+    #logo span{
+        font-size: 20px;
+    }
+    #logo i{
+        font-size: 20px;
+    }
+    header{
+        padding: 10px 2%;
+    }
+    header form{
+        width: 50%;
+    }
+
+    .menu{
+        font-size: 14px;
+    }
+    .Box form {
+        width: 80%;
+    }
+    nav{
+        left: 24%;
+        width: 60%;
+    }
+}
+@media(max-width: 700px)
+{
+    .Box{
+        width: 85%;
+    }
+    .Form h2{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .input-box .icon,
+    .input-box label,
+    .input-box input{
+        font-size: 14px;
+    }
+    .Form .remember{
+        font-size: 12px;;
+    }
+    .Form .Submit,
+    .Form .register,
+    .Form .forget{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .Form .rule{
+        text-align: center;
+    }
+    .forget-register{
+        display: unset;
+    }
+    .Social a{
+        margin: 8px 0;
+    }
+    nav{
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+    .menu-content a{
+        font-size: 12px;
+    }
+}
